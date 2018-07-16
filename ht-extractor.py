@@ -158,7 +158,7 @@ if bool(d):
             try:
                 df_iso.iloc[1:, df_iso.columns.get_loc(column)] = df_iso.iloc[1:, df_iso.columns.get_loc(column)] - df_iso.iloc[1:, df_iso.columns.get_loc(d)]
             except:
-                print('Stop changing things without making notes')
+                print('There was an error isolating the signal in column ', column)
 
 #if bool(c) and not bool(d):
 #    for column in df_iso.columns:
